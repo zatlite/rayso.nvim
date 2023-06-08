@@ -6,7 +6,8 @@ local rayso = require 'rayso'
 M.get_open_command = function()
   -- On a mac
   if vim.fn.has 'macunix' then
-    return 'open -a ' .. rayso.config.open_cmd .. '.app'
+    return 'open'
+    -- return 'open -a ' .. rayso.config.open_cmd .. '.app'
   end
 
   -- Not an mac and command is not an executable
